@@ -90,7 +90,7 @@ span:hover {
     font-size: 7px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 870px) {
   h1 {
     font-size: 3rem;
   }
