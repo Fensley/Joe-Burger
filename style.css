@@ -41,6 +41,7 @@ p {
   font-size: 20px;
 }
 button {
+  border-radius: 5px;
   color: white;
   background-color: black;
   cursor: pointer;
@@ -48,11 +49,17 @@ button {
   margin-top: 20px;
   padding: 15px 25px;
 }
+button:hover {
+  transition: all 0.5s ease;
+  color: black;
+  background-color: orange;
+}
 img {
   display: flex;
   height: 300px;
   width: 300px;
   display: flex;
+  border-radius: 1px;
 }
 .img-container {
   justify-content: center;
@@ -61,12 +68,18 @@ img {
 
   height: 400px;
 }
-
+span {
+  border-bottom: 1px solid transparent;
+}
 span:hover {
   cursor: pointer;
   border-bottom: 1px solid;
 }
 @media (max-width: 315px) {
+  .themenu {
+    gap: 9px;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -74,7 +87,7 @@ span:hover {
     font-size: 5px;
   }
   body {
-    font-size: 5px;
+    font-size: 7px;
   }
 }
 @media (max-width: 850px) {
@@ -99,7 +112,7 @@ span:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
     height: 100px;
   }
   body {
